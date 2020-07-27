@@ -62,6 +62,7 @@ ui <- fluidPage(headerPanel('COVID-19 Analysis - Linear Regression'),
              p("This dataset is about showing cumulative number of COVID cases and death based on count data from laboratory and probable cases from federal and government. It is continuously updated every day to show total cases and death of each state from COVID."),
              p("By using this dataset for linear regression, it allows us to predict an continuous outcome of cases and death for each state."),
              uiOutput("datasetCredit"),
+             h3("My Code", align = "center"),
              uiOutput("code")
     )
   ),
@@ -75,8 +76,8 @@ server <- function(input, output) {
   })
   
   code <- a("My code", href="https://github.com/cmacWPI/DS501_HW6")
-  output$datasetCredit <- renderUI({
-    tagList(code, 'can be found in my GitHub')
+  output$code <- renderUI({
+    tagList(code, 'can be found in GitHub')
   })
   stateSelect <- reactive({
     covid %>%
