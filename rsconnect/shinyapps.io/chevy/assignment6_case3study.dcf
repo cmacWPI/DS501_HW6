@@ -1,0 +1,13 @@
+name: assignment6_case3study
+title: assignment6_case3study
+username:
+account: chevy
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2613394
+bundleId: 3441974
+url: https://chevy.shinyapps.io/assignment6_case3study/
+when: 1595868724.21373
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: test.R|us-counties.csv|us-states.csv|us.csv
